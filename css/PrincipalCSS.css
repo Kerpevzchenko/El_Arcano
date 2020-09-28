@@ -1,0 +1,157 @@
+/*///////////////////////////////////////////////////////////////////*/
+/*HEADER*/
+/*///////////////////////////////////////////////////////////////////*/
+
+.LastBar {
+    height: 50px;
+    background-color: #0E3D3E;
+    
+}
+
+/*Título*/
+.Arcano {
+    font-size: 35px;
+    padding-left: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.Botones {
+    display: inline-block;
+    margin:10px;
+}
+
+/*BoTON de Iniciar sesion*/
+.SL1 {
+    color:white;
+    font-size: 15px;
+    background-color: #0E3D3E;
+    border-radius: 4px;
+    border: 0px solid white;
+    padding: 3px 3px;
+    transition-duration: 0.4s;
+}
+
+/*Boton de Registrarse*/
+.SL2 {
+    color:#0E3D3E;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 3px 4px;
+    transition-duration: 0.4s;
+}
+
+.SL2:hover {
+    padding: 3px 10px;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*NAVBAR*/
+/*/////////////////////////////////////////////////////////////////////*/
+.topnav {
+    overflow: hidden;
+    background-color: #016163;
+    padding-left:6px;
+}
+  
+
+.topnav a {
+
+    font-size: 15px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2px 11px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    margin: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+body {
+    background-color: #0C1212;
+}
+
+/*/////////////////////////////////////////////////////////////////////////*/
+/*BOX SIZING PARA EL CONTENIDO DE LA PÁGINA PRINCIPAL*/
+/*/////////////////////////////////////////////////////////////////////////*/
+
+
+.Structure{
+    margin-left: 180px;
+    margin-right: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:white;
+}
+
+/*/////////////////////////////////////////////////////////////////////////*/
+/*DIVISION DE COLUMNAS, PÁGINA PRINCIPAL*/
+/*/////////////////////////////////////////////////////////////////////////*/
+
+/* Columna básica */
+.column {
+    float: left;
+    padding: 10px;
+}
+/*Columna del 80%*/
+.column.big {
+    width: 80%;
+}
+/*Segunda Division de Columna, IZQUIERDA*/
+.column.big2 {
+    width: 50%;
+}
+/*Segunda División de Columna, DERECHA*/
+.column.big3 {
+    padding-top: 50px;
+    width: 50%;
+}
+
+/*Columna del 20% */
+.column.small {
+    width: 20%;
+}
+
+  @media screen and (max-width: 600px) {
+    .column.small, .column.big {
+      width: 100%;
+    }
+  }
+
+/*////////////////////////////////////////////////////////////////*/
+/*IMAGENES Y TITULOS DE NOTICIAS, PÁGINA PRINCIPAL*/
+/*////////////////////////////////////////////////////////////////*/
+
+  div.polaroid {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+  div.container {
+      color:white;
+      background-color: #141f1f ;
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+  h6.fecha{
+      color: rgb(119, 119, 119);
+      font-size: 12px;
+  }
+
+  h6.autor{
+    color: #048350;
+    font-size: 12px;
+}
+  
