@@ -1,0 +1,213 @@
+body{
+    background-color: #0C1212;
+}
+
+.container{
+    padding: 0%;
+    color: white;
+}
+
+.row{
+    margin: 0;
+}
+
+.LastBar {
+    height: 50px;
+    background-color: #0E3D3E;
+}
+
+.LastBar {
+    text-align: center;
+}
+
+.Botones{
+    height: 50px;
+}
+
+.Botones .row{
+    height: inherit;
+}
+
+.Botones .row .col-lg-6{
+    padding-right: 15px;
+}
+
+.Botones .col-lg-6 {
+    /*display: inline-block;*/
+    height: inherit;
+    
+}
+
+.SL1, .SL2{
+    position: relative;
+    font-size: 15px;
+    width: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*BoTON de Iniciar sesion*/
+.SL1 {
+    color:white;
+    background-color: #0E3D3E;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 3px 3px;
+    transition-duration: 0.4s;
+}
+
+/*Boton de Registrarse*/
+.SL2 {
+    color:#0E3D3E;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 3px 4px;
+    transition-duration: 0.4s;
+}
+
+.SL2:hover {
+    padding: 6px 10px;
+}
+
+.Arcano {
+    font-size: 35px;
+    padding-left: 5px;
+    margin: 10px;
+    color: white;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*NAVBAR*/
+/*/////////////////////////////////////////////////////////////////////*/
+.topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #016163;
+    /*padding-left:6px;*/
+    text-align: center;
+    width: 100%;
+}
+
+.topnav .a{ /*Centrar los elementos*/
+    position: inherit;
+    width: 60%;
+    height: 30px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    /*border: 2px red solid;*/
+
+}
+
+.topnav .a a {
+    position: relative;
+    height: inherit;
+
+    font-size: 15px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2px 0px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+
+    /*border: 2px yellow solid;*/
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*CAROUSEL*/
+/*/////////////////////////////////////////////////////////////////////*/
+.News-Carousel{
+    margin-top: 20px;
+    background-color: #0E3D3E;
+}
+
+.News-Carousel .carousel-item img{
+    margin: 0 auto;
+    object-fit: contain;
+    width: 640px;
+    height: 480px;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*CAROUSEL*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+.News{
+    margin: 10px 0 0 0;
+}
+
+div.polaroid {
+    width: 100%;
+    background-color: #0C1212;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    /*margin-bottom: 5px;*/
+
+    padding: 10px 10px 10px 10px;
+}
+
+div.polaroid .info {
+    color:white;
+    background-color: #141f1f ;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+div.polaroid .info h6.fecha{
+    color: rgb(119, 119, 119);
+    font-size: 12px;
+}
+
+div.polaroid .info h6.autor{
+  color: #048350;
+  font-size: 12px;
+}
+
+.Otros h2, .Otros p{
+    padding: 0px 0px 0px 10px;
+}
+
+.footer{
+    background-color: #141f1f ;
+    height: 150px;
+}
+
+.footer .col-lg-12{
+    height: inherit;
+}
+
+.footer .col-lg-12 .row{
+    height: inherit;
+}
+
+.footer .col-lg-12 .row .col-lg-3{
+    height: inherit;
+}
+
+.footer-item{
+    position: relative;
+    /*  border: 2px solid white;*/
+    padding: 0 0 0px 200px;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-item ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item ul li{
+    display: block;
+}
