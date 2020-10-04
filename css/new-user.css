@@ -1,0 +1,28 @@
+.Arcano{
+    margin: 0;
+    font-size: 60px;
+}
+
+.LastBar{
+    background-color: #0E3D3E;
+}
+
+.row .form-container {
+    /*height: 500px;*/
+    margin: 100px auto;
+    width: 50%;
+
+    /*background-color: lawngreen;*/
+}
+
+form{
+    position: relative;
+    margin: 0 auto;
+
+    border: 1px rgb(150, 150, 150) solid;
+    border-radius: 8px;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+

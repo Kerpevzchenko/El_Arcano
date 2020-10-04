@@ -14,3 +14,7 @@ $(document).ready(function(){
     //alert(menuNav);
 
 });
+
+function openPageInTab(page){
+    window.open(page, "_self");
+}

@@ -1,0 +1,65 @@
+html{
+
+}
+
+body{
+    background-color: #0C1212;
+}
+
+.container{
+    padding: 0%;
+    color: white;
+}
+
+.row{
+    margin: 0;
+}
+
+.Arcano {
+    font-size: 30px;
+    padding-left: 5px;
+    margin: auto 10px;
+    color: white;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.form-input{
+    margin: 20px 0;
+}
+
+form label{
+    padding-right: 35px;
+}
+
+form [type="submit"]{
+    background-color: #048350;
+    width: 25%;
+    border: 1px black solid;
+    padding: 5px 0;
+    transition: all ease .4s;
+}
+
+form [type="submit"]:hover{
+    background-color: #27a170;
+    width: 50%;
+}
+
+form [type="text"], form [type="password"], form [type="text"], form [type="email"]{
+    background-color: transparent;
+    border: 0;
+    border-bottom:2px white solid;
+    transition: all ease 0.4s;
+}
+
+form [type="text"]:focus, form [type="password"]:focus, form [type="text"]:focus, form [type="email"]:focus{
+
+    border-bottom:2px #048350 solid;
+}

@@ -1,16 +1,3 @@
-body{
-    background-color: #0C1212;
-}
-
-.container{
-    padding: 0%;
-    color: white;
-}
-
-.row{
-    margin: 0;
-}
-
 .LastBar {
     height: 50px;
     background-color: #0E3D3E;
@@ -21,7 +8,7 @@ body{
 }
 
 .Botones{
-    height: 50px;
+    height: inherit;
 }
 
 .Botones .row{
@@ -38,7 +25,7 @@ body{
     
 }
 
-.SL1, .SL2{
+.LastBar .SL1, .LastBar .SL2{
     position: relative;
     font-size: 15px;
     width: inherit;
@@ -68,14 +55,6 @@ body{
 
 .SL2:hover {
     padding: 6px 10px;
-}
-
-.Arcano {
-    font-size: 35px;
-    padding-left: 5px;
-    margin: 10px;
-    color: white;
-    font-family: 'Grenze Gotisch', cursive;
 }
 
 /*/////////////////////////////////////////////////////////////////////*/
@@ -211,3 +190,28 @@ div.polaroid .info h6.autor{
 .footer-item ul li{
     display: block;
 }
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*MODAL INICIAR SESION*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+.modal .modal-dialog .modal-content .modal-header{
+    background-color: #0E3D3E;
+    font-family: 'Grenze Gotisch', cursive;
+    
+}
+
+.modal .modal-dialog .modal-content .modal-header .modal-title{
+    font-size: 35px;
+}
+
+.modal .modal-dialog .modal-body{
+    color: black;
+}
+
+form [type="text"], form [type="password"], form [type="text"], form [type="email"]{
+    border-bottom:2px black solid;
+}
+
+
+
