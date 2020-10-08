@@ -1,107 +1,3 @@
-.LastBar {
-    height: 50px;
-    background-color: #0E3D3E;
-}
-
-.LastBar {
-    text-align: center;
-}
-
-.Botones{
-    height: inherit;
-}
-
-.Botones .row{
-    height: inherit;
-}
-
-.Botones .row .col-lg-6{
-    padding-right: 15px;
-}
-
-.Botones .col-lg-6 {
-    /*display: inline-block;*/
-    height: inherit;
-    
-}
-
-.LastBar .SL1, .LastBar .SL2{
-    position: relative;
-    font-size: 15px;
-    width: inherit;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/*BoTON de Iniciar sesion*/
-.SL1 {
-    color:white;
-    background-color: #0E3D3E;
-    border-radius: 4px;
-    border: 1px solid white;
-    padding: 3px 3px;
-    transition-duration: 0.4s;
-}
-
-/*Boton de Registrarse*/
-.SL2 {
-    color:#0E3D3E;
-    background-color: white;
-    border-radius: 4px;
-    border: 1px solid white;
-    padding: 3px 4px;
-    transition-duration: 0.4s;
-}
-
-.SL2:hover {
-    padding: 6px 10px;
-}
-
-/*/////////////////////////////////////////////////////////////////////*/
-/*NAVBAR*/
-/*/////////////////////////////////////////////////////////////////////*/
-.topnav {
-    position: relative;
-    overflow: hidden;
-    background-color: #016163;
-    /*padding-left:6px;*/
-    text-align: center;
-    width: 100%;
-}
-
-.topnav .a{ /*Centrar los elementos*/
-    position: inherit;
-    width: 60%;
-    height: 30px;
-
-    left: 50%;
-    transform: translateX(-50%);
-
-    /*border: 2px red solid;*/
-
-}
-
-.topnav .a a {
-    position: relative;
-    height: inherit;
-
-    font-size: 15px;
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 2px 0px;
-    text-decoration: none;
-    transition-duration: 0.4s;
-
-    /*border: 2px yellow solid;*/
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
 /*/////////////////////////////////////////////////////////////////////*/
 /*CAROUSEL*/
 /*/////////////////////////////////////////////////////////////////////*/
@@ -133,27 +29,6 @@ div.polaroid {
     /*margin-bottom: 5px;*/
 
     padding: 10px 10px 10px 10px;
-}
-
-div.polaroid .info {
-    color:white;
-    background-color: #141f1f ;
-    text-align: left;
-    padding: 10px 20px;
-}
-
-div.polaroid .info h6.fecha{
-    color: rgb(119, 119, 119);
-    font-size: 12px;
-}
-
-div.polaroid .info h6.autor{
-  color: #048350;
-  font-size: 12px;
-}
-
-.Otros h2, .Otros p{
-    padding: 0px 0px 0px 10px;
 }
 
 .footer{
@@ -209,9 +84,10 @@ div.polaroid .info h6.autor{
     color: black;
 }
 
-form [type="text"], form [type="password"], form [type="text"], form [type="email"]{
+.modal form [type="text"], .modal form [type="password"], .modal form [type="text"], .modal form [type="email"]{
     border-bottom:2px black solid;
 }
 
-
-
+.modal form [type="text"]:focus, .modal form [type="password"]:focus, .modal form [type="text"]:focus, .modal form [type="email"]:focus{
+    border-bottom:2px #048350 solid;
+}

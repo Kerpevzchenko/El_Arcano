@@ -21,6 +21,144 @@ body{
     margin: auto 10px;
     color: white;
     font-family: 'Grenze Gotisch', cursive;
+    transition: all ease .4s;
+}
+
+.Arcano:hover{
+    padding-left: 30px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.LastBar {
+    height: 50px;
+    background-color: #0E3D3E;
+    text-align: center;
+}
+
+.Botones{
+    height: inherit;
+}
+
+.Botones .row{
+    height: inherit;
+}
+
+.Botones .row .col-lg-6{
+    padding-right: 15px;
+}
+
+.LastBar .SL1, .LastBar .SL2{
+    position: relative;
+    font-size: 15px;
+    width: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*BoTON de Iniciar sesion*/
+.SL1 {
+    color:white;
+    background-color: #0E3D3E;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 3px 3px;
+    transition-duration: 0.4s;
+}
+
+.SL1:hover{
+    border-color: #A6D004;
+    background-color: #A6D004;
+    color: black;
+}
+
+/*Boton de Registrarse*/
+.SL2 {
+    color:#0E3D3E;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 3px 4px;
+    transition-duration: 0.4s;
+}
+
+.SL2:hover {
+    padding: 6px 10px;
+}
+
+#btn-profileW{
+    display: none;
+}
+/*/////////////////////////////////////////////////////////////////////*/
+/*SEARCH BAR*/
+/*/////////////////////////////////////////////////////////////////////*/
+.LastBar .col-lg-8{
+    height: inherit;
+}
+
+.search-bar{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.search-bar input{
+    width: 90%;
+    border: 1px white solid;
+    background-color: transparent;
+
+    color: white;
+    border-radius: 2px;
+    padding: 3px 15px;
+
+    margin-left: 5px;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*NAVBAR*/
+/*/////////////////////////////////////////////////////////////////////*/
+.topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #016163;
+    /*padding-left:6px;*/
+    text-align: center;
+    width: 100%;
+}
+
+.topnav .a{ /*Centrar los elementos*/
+    position: inherit;
+    width: 60%;
+    height: 30px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    /*border: 2px red solid;*/
+
+}
+
+.topnav .a a {
+    position: relative;
+    height: inherit;
+
+    font-size: 15px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2px 0px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+
+    /*border: 2px yellow solid;*/
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 .center{
@@ -29,6 +167,10 @@ body{
 
 .right{
     text-align: right;
+}
+
+.left{
+    text-align: left;
 }
 
 .form-input{
@@ -41,15 +183,15 @@ form label{
 
 form [type="submit"]{
     background-color: #048350;
-    width: 25%;
-    border: 1px black solid;
+    width: 10%;
+    border: 0px black solid;
     padding: 5px 0;
     transition: all ease .4s;
 }
 
 form [type="submit"]:hover{
     background-color: #27a170;
-    width: 50%;
+    width: 20%;
 }
 
 form [type="text"], form [type="password"], form [type="text"], form [type="email"]{
@@ -57,9 +199,34 @@ form [type="text"], form [type="password"], form [type="text"], form [type="emai
     border: 0;
     border-bottom:2px white solid;
     transition: all ease 0.4s;
+    padding-bottom: 5px;
 }
 
 form [type="text"]:focus, form [type="password"]:focus, form [type="text"]:focus, form [type="email"]:focus{
 
     border-bottom:2px #048350 solid;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*Miniatura Noticias*/
+/*/////////////////////////////////////////////////////////////////////*/
+div.polaroid .info {
+    color:white;
+    background-color: #141f1f ;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+div.polaroid .info h6.fecha{
+    color: rgb(119, 119, 119);
+    font-size: 12px;
+}
+
+div.polaroid .info h6.autor{
+  color: #048350;
+  font-size: 12px;
+}
+
+.Otros h2, .Otros p{
+    padding: 0px 0px 0px 10px;
 }

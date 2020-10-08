@@ -5,6 +5,7 @@
 
 .LastBar{
     background-color: #0E3D3E;
+    height: initial;
 }
 
 .row .form-container {
@@ -24,5 +25,9 @@ form{
 
     top: 50%;
     transform: translateY(-50%);
+}
+
+form input{
+    color: white;
 }
 

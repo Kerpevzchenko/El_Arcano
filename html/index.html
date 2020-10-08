@@ -20,20 +20,27 @@
                 <a class="Arcano" href="#">El Arcano</a>
             </div>
             <div class="col-lg-8" style="">
+                <div class="search-bar" >
+                    <form action="">
+                        <i class="fas fa-search"></i>
+                        <input type="text" name="" id="" placeholder="Buscar">
+                    </form>
+                </div>
             </div>
             <div class="col-lg-2 Botones" style="">
                 <div class="row">
                     <div class="col-lg-6 " style="">
-                        <button class="SL1" data-target="#myModal" data-toggle="modal">Iniciar Sesión</button>
+                        <button class="SL1" id="btn-openModalLog" data-target="#myModal" data-toggle="modal">Iniciar Sesión</button>
                     </div>
                     <div class="col-lg-6 " style="">
-                        <button class="SL2" onclick="openPageInTab('new-user.html')">Registrarse</button>
+                        <button class="SL2" id="btn-openRegW">Registrarse</button>
+                        <button class="SL1" id="btn-profileW">Mi perfil</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" ">
             <div class="col-lg-12">
                 <!--NAVBAR-->
                 <div class="topnav">
@@ -187,7 +194,7 @@
         </div>
 
         <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
+        <div id="myModal" class="modal fade form-login" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -198,28 +205,22 @@
                     </div>
                     <div class="modal-body">
                         <form action="">
-                            <div class="row form-input">
-                                <div class="col-lg-6 right">
-                                    <label for="login-email" style="display: block;">Corre electronico</label>
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="email" name="" id="login-email" required> 
+                            <div class="row form-input center">
+                                <div class="col-lg-12">
+                                    <input type="email" name="" id="login-email" placeholder="Correo electronico" required> 
                                 </div>
                             </div>
 
-                            <div class="row form-input">
-                                <div class="col-lg-6 right">
-                                    <label for="login-pass" style="display: block;">Contraseña</label>
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="password" name="" id="login-pass" required>
+                            <div class="row form-input center">
+                                <div class="col-lg-12">
+                                    <input type="password" name="" id="login-pass" placeholder="Contraseña" required>
                                 </div>
                             </div>
 
                             <div class="row form-input">
                                 <div class="col-lg-12">
                                     <div class="center" style="">
-                                        <button type="submit" class="">Entrar</button>
+                                        <button type="submit" id="btn-login" class=""><i class="fa fa-chevron-right"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -239,6 +240,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8e52bc45f8.js" crossorigin="anonymous"></script>
     <script language="javascript" type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>
