@@ -91,3 +91,5 @@ div.polaroid {
 .modal form [type="text"]:focus, .modal form [type="password"]:focus, .modal form [type="text"]:focus, .modal form [type="email"]:focus{
     border-bottom:2px #048350 solid;
 }
+
+
