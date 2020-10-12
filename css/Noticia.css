@@ -1,52 +1,46 @@
 .ubicacionN {
     font-size: 13px;
     background-color: black;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 6px;
-    padding-right: 6px;
+    width: 20%;
+    margin: 0 auto;
 }
 
-.titleN {
-    justify-content: center;
-}
-
-.EstructuraN {
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.EstructuraF {
-    margin-top: 20px;
+.parte-inf, .portada {
     margin-left: 130px;
     margin-right: 130px;
 }
 
-.TítuloPrincipal
+.col-der{
+    padding-left: 10px;
+}
+
+.col-izq{
+    padding-right: 10px;
+    border-right: 2px solid #0E3D3E;
+}
+
+.TítuloPrincipal h1
 {
-    text-align:center;
     font-family: 'Piazzolla', serif;
     font-size: 50px;
 }
 
 .FuenteNoticia {   
     font-family: 'Bitter', serif;
+    font-size: 15px;
 }
 
 .descripcion {
     padding-top: 15px;
-    justify-content: center;
-}
-
-.FuenteNoticia.Descrip {
-    font-size: 15px;
+    width: 100%;
 }
 
 img {
-    display: block;
+    /*display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
+    object-fit: cover;
+    width: 100%;
 }
 
 .portada {
@@ -55,30 +49,13 @@ img {
 
 hr.StartNew{
     margin-top: 40px;
-    height: 0.1px;
+    height: 2px;
     background-color: #0E3D3E;
 }
 
-.relleno{
-    font-size: 17px;
-    justify-content: center;
-    text-align: left;
-}
-
-.columna{
-    float:left;
-    padding:10px;
-}
-
-.columna.grande{
-    width: 70%;
-}
-.columna.peque{
-    border-left: 0.2px solid #0E3D3E;
-    width:30%
-}
-
 p.relleno{
+    font-size: 17px;
+    text-align: justify;
     font-family: 'Bitter', serif;
 }
 
@@ -88,56 +65,28 @@ p.hour{
 }
 
 .categs{
-    text-align: right;
     font-family: 'Bitter', serif;
-    border-bottom: 0.1px solid white;
-}
-
-.row.cat{
-    display:block
+    border-bottom: 2px solid white;
 }
 
 div.gallery {
-    width: 50%;
-   
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
     width: 100%;
-    height: auto;
-  }
+}
   
-  div.desc {
+div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+  
+div.desc {
     padding: 5px;
     text-align: center;
     font-family: 'Bitter', serif;
     font-size: 12px;
     
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-
-  img.next{
-      width: 25%;
-      height: 100%;
-      float:left;
-  }
-
-  .nextD{
-    padding: 5px;
-    font-family: 'Bitter', serif;
-    text-align: center;
-    display:inline;
-    font-size: 13px;
-    color: white;
-  }
-
-  .nextD:hover{
-    text-decoration: none;
-  }
+}

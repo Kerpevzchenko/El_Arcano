@@ -152,11 +152,6 @@ body{
     color: black;
 }
 
-#btn-EditorMenu{
-    width: 50%;
-    padding: 0;
-}
-
 .center{
     text-align: center;
 }
@@ -229,4 +224,42 @@ div.polaroid a{
 
 .Otros h2, .Otros p{
     padding: 0px 0px 0px 10px;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*FOOTER*/
+/*/////////////////////////////////////////////////////////////////////*/
+.footer{
+    background-color: #141f1f ;
+    height: 150px;
+}
+
+.footer .col-lg-12{
+    height: inherit;
+}
+
+.footer .col-lg-12 .row{
+    height: inherit;
+}
+
+.footer .col-lg-12 .row .col-lg-3{
+    height: inherit;
+}
+
+.footer-item{
+    position: relative;
+    /*  border: 2px solid white;*/
+    padding: 0 0 0px 200px;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-item ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item ul li{
+    display: block;
 }
