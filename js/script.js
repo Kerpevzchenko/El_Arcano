@@ -2,11 +2,9 @@ $(document).ready(function(){
     //alert("Esto es Jquery");
 
     //Acomoda los elementos del navbar
-    var menuNav = $(".topnav .a").width();
-    var NavElem = $(".topnav .a a");
-
+    var menuNav = $(".topnav").width();
+    var NavElem = $(".topnav a");
     var posElem = menuNav / NavElem.length;
-
     NavElem.each(function(){
         $(this).css("width",posElem);
     });
@@ -22,8 +20,24 @@ $(document).ready(function(){
     //Vincula el boton de registro con la funcion de abrir pagina.
     $("#btn-openRegW").on("click",{name:'new-user.html'} ,openPageInTab);
 
-
     $("#btn-profileW").on("click",{name:"profile.html"},openPageInTab);
+
+    //Botones del editor para elegir entre las noticias y los reporteros.
+    $("#ed-selNews").on("click", function(){
+        $("#news-list").css("display","block");
+        $("#repo-list").css("display","none");
+    });
+
+    $("#ed-selRepo").on("click", function(){
+        $("#repo-list").css("display","block");
+        $("#news-list").css("display","none");
+    })
+
+    //Vincula todos los elementos de noticia con la pagina de noticia.
+    var newsArray = $(".polaroid a");
+    newsArray.each(function(){
+        $(this).attr("href", "Noticia.html");
+    });
 
 });
 
