@@ -1,0 +1,43 @@
+.EstructuraCN{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #111a1a;
+}
+
+.EditorTitle{
+    color: rgb(32, 233, 149);
+    font-family: 'Bitter', serif;
+}
+
+.Instructions{
+    color: white;
+    font-family: 'Bitter', serif;
+}
+
+form [type="datetime-local"]{
+    background-color: transparent;
+    border: 0;
+    border-bottom:2px white solid;
+    transition: all ease 0.4s;
+    padding-bottom: 5px;
+}
+
+select.form-control{
+    background-color: transparent;
+    border: 0;
+    border-bottom:2px white solid;
+    transition: all ease 0.4s;
+    padding-bottom: 5px;
+  }
+
+  textarea.form-control{
+    background-color: transparent;
+    border: 0;
+    border-bottom:2px white solid;
+    transition: all ease 0.4s;
+    padding-bottom: 5px;
+  }

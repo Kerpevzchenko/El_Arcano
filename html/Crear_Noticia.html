@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Noticia</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/Noticia.css">
+    <link rel="stylesheet" href="../css/Crear_Noticia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row LastBar">
+            <div class="col-lg-2" style="">
+                <a class="Arcano" href="index.html">El Arcano</a>
+            </div>
+            <div class="col-lg-8" style="">
+                <div class="search-bar" >
+                    <form action="">
+                        <i class="fas fa-search"></i>
+                        <input type="text" name="" id="" placeholder="Buscar">
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-2 Botones" style="">
+                <div class="row">
+                    <div class="col-lg-6 " style="">
+                        <button class="SL1" id="btn-openModalLog" data-target="#myModal" data-toggle="modal">Iniciar Sesión</button>
+                    </div>
+                    <div class="col-lg-6 " style="">
+                        <button class="SL2" id="btn-openRegW">Registrarse</button>
+                        <button class="SL1" id="btn-profileW">Mi perfil</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row nav-cont">
+            <div class="col-lg-2"></div>
+            
+            <div class="col-lg-8 " >
+                <!--NAVBAR-->
+                <div class="topnav" style="">
+                    <a href="#">Misterios</a>
+                    <a href="#">Necronomicón</a>
+                    <a href="#">Portales</a>
+                    <a href="#">Deep Web</a>
+                    <a href="#">NASA</a>
+                    <a href="#">Religión</a>
+                    <a href="#" id="Ed-AgrSecc">+</a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 center">
+            </div>
+        </div>
+
+
+        <div class="EstructuraCN">
+            <div class="row">
+                <h1 class="EditorTitle">MODO EDITOR</h1>
+            </div>
+            <div class="row">
+                <h6 class="Instructions">Rellene los campos a continuación para mandar el artículo a su revisión.</h1>
+            </div> 
+
+            <hr class="StartNew">
+            
+            <form action="">
+                <div class="form-group">
+                    <label>Título</label>
+                    <input type="text" class="form-control" id="TituloNoticia" aria-describedby="titleHelp" placeholder="Escribir un título..." required>
+                    <small id="titleHelp" class="form-text text-muted">Recuerda ser breve pero logrando captar el interés del lector.</small>
+                  </div>
+                <div class="form-group">
+                    <label>Ubicación de los hechos</label>
+                    <input type="text" class="form-control" id="UbicacionNoticia" placeholder="Escribir ubicación..." required>    
+                </div>  
+                <div class="form-group">
+                    <label>Descripción</label>
+                    <input type="text" class="form-control" id="DescripNoticia" aria-describedby="titleHelp" placeholder="Escribe una descripción..." required>
+                    <small id="titleHelp" class="form-text text-muted">Recuerda ser breve pero logrando captar el interés del lector.</small>
+                  </div>
+
+
+                <div class="form-row"> 
+
+                    <div class="col">
+                <div class="form-group">
+                    <label>Fecha</label>
+                    <input type="datetime-local" class="form-control" id="dateX" required>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="select">Categoría</label>
+                    <select class="form-control" id="exampleFormControlSelect1" required>
+                      <option>Misterios</option>
+                      <option>Portales</option>
+                      <option>Necronomicón</option>
+                      <option>Deep Web</option>
+                      <option>NASA</option>
+                      <option>Religión</option>
+                    </select>
+                  </div>
+                  </div>
+
+                  
+                </div> 
+
+                <div class="form-group">
+                    <label>Cuerpo</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                  </div>
+
+
+                 
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">Imágenes</label>
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>             
+                 
+
+                
+
+
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+
+            
+        </div>
+
+        <div class="row footer">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-3" style="">
+                        <div class="footer-item">
+                            <span>Creado por:</span>
+                            <ul>
+                                <li>Hasta la</li>
+                                <li>Proximaaaa</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" style="">
+                        <div class="footer-item">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8e52bc45f8.js" crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
