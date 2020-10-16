@@ -29,10 +29,11 @@
                 <div class="row">
                     <div class="col-lg-6 " style="">
                         <button class="SL1" id="btn-openModalLog" data-target="#myModal" data-toggle="modal">Iniciar Sesión</button>
+                        <button class="SL1" id="btn-profileW">Mi perfil</button>
                     </div>
                     <div class="col-lg-6 " style="">
                         <button class="SL2" id="btn-openRegW">Registrarse</button>
-                        <button class="SL1" id="btn-profileW">Mi perfil</button>
+                        <button class="SL2" id="btn-logout">Cerrar sesion</button>
                     </div>
                 </div>
             </div>
@@ -95,17 +96,117 @@
                     <div class="row datehour">
                         <p class ="hour">10/10/2020 05:00</p>
                     </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="relleno">La historia de Merlín está repleta de misterios y como su vida está relatada principalmente por obras literarias, o de poco valor histórico, se hace difícil señalar la fecha exacta de su nacimiento o de su muerte.
+                                <br><br>
+                                Según algunas leyendas, Merlín fue engendrado por un demonio, un espíritu corrupto que se unió ilícitamente a una monja. En algunas obras la madre de Merlín no es una monja, sino la hija célibe de un rey menor de Gales del Sur, aunque también se menciona a una bruja del bosque. Otras versiones sugieren que Merlín fue concebido por su madre sin ninguna intervención masculina. Finalmente, otros creen que lo engendró la fuerza mágica de la antigüedad. Por otro lado una versión más apegada a la historia dice que Merlin, o Myrddin Emrys en galés, fue hijo no reconocido de uno de los reyes de Britania: Aurelius Ambrosius, hermano mayor de Julyvan.
+                                <br><br>
+                                En todo caso, parece ser que Merlín fue creado al principio para atraer a los humanos al lado oscuro que toda persona guarda, pero al crecer decidió hacer precisamente lo contrario: se convirtió en guía espiritual de su época, y en consejero de diferentes reyes, como el usurpador Vortigern, Aurelius Ambrosius, Uther Pendragon y el rey Arturo de Camelot.
+                                <br><br>
+                                
+                                Ilustración en Las Crónicas de Núremberg (1493).<br>
+                                Se considera a Merlín el mago más poderoso de la epopeya artúrica. Según se cuenta en las diferentes obras literarias que lo tienen de protagonista, era capaz de hablar con los animales, de cambiar de forma, de hacerse invisible, y también de controlar el clima y los elementos, aunque estas habilidades las empleaba con sumo cuidado para no enfurecer a la naturaleza, la «diosa más poderosa». En la novela medieval Lancelot y Ginebra se contaba de él lo siguiente: "Conocía la esencia de todas las cosas, su transformación y su renovación, conocía el secreto del Sol y de la Luna, las leyes que rigen el curso de las estrellas en el firmamento; las imágenes mágicas de las nubes y el aire; los misterios del mar. Conocía los demonios que envían sueños bajo la Luna. Comprendía el grito áspero de la corneja, el volar cantarín de los cisnes, la resurrección del fénix. Podía interpretar el vuelo de los cuervos, el rumbo de los peces y las ideas ciegas de los hombres, y predecía todas las cosas que sucedían después."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row" id="editComent-container">
+                        <div class="col-lg-12 edit-coment" style="">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <textarea name="coment" id="coment" rows="5" placeholder="Comentario del editor"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 right">
+                                        <input type="button" value="Enviar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="row" >
+                        <div class="col-lg-12 secc-coment">
+                            <div class="row">
+                                <div class="col-lg-12 right">
+                                    <h3 class="categs">Comentarios</h3>
+                                </div>
+                            </div>
+                            <div class="row" id="userComent-container">
+                                <div class="col-lg-12 edit-coment Usuario" style="">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <textarea name="coment" id="coment" rows="2" placeholder="Escribe tu comentario"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 right">
+                                                <input type="button" value="Enviar">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 user-coment">
+                                    <div class="row">
+                                        <div class="col-lg-1">
+                                            <img src="../ojo.jpg" alt="">
+                                        </div>
     
-                    <p class="relleno">La historia de Merlín está repleta de misterios y como su vida está relatada principalmente por obras literarias, o de poco valor histórico, se hace difícil señalar la fecha exacta de su nacimiento o de su muerte.
-                        <br><br>
-                        Según algunas leyendas, Merlín fue engendrado por un demonio, un espíritu corrupto que se unió ilícitamente a una monja. En algunas obras la madre de Merlín no es una monja, sino la hija célibe de un rey menor de Gales del Sur, aunque también se menciona a una bruja del bosque. Otras versiones sugieren que Merlín fue concebido por su madre sin ninguna intervención masculina. Finalmente, otros creen que lo engendró la fuerza mágica de la antigüedad. Por otro lado una versión más apegada a la historia dice que Merlin, o Myrddin Emrys en galés, fue hijo no reconocido de uno de los reyes de Britania: Aurelius Ambrosius, hermano mayor de Julyvan.
-                        <br><br>
-                        En todo caso, parece ser que Merlín fue creado al principio para atraer a los humanos al lado oscuro que toda persona guarda, pero al crecer decidió hacer precisamente lo contrario: se convirtió en guía espiritual de su época, y en consejero de diferentes reyes, como el usurpador Vortigern, Aurelius Ambrosius, Uther Pendragon y el rey Arturo de Camelot.
-                        <br><br>
-                        
-                        Ilustración en Las Crónicas de Núremberg (1493).<br>
-                        Se considera a Merlín el mago más poderoso de la epopeya artúrica. Según se cuenta en las diferentes obras literarias que lo tienen de protagonista, era capaz de hablar con los animales, de cambiar de forma, de hacerse invisible, y también de controlar el clima y los elementos, aunque estas habilidades las empleaba con sumo cuidado para no enfurecer a la naturaleza, la «diosa más poderosa». En la novela medieval Lancelot y Ginebra se contaba de él lo siguiente: "Conocía la esencia de todas las cosas, su transformación y su renovación, conocía el secreto del Sol y de la Luna, las leyes que rigen el curso de las estrellas en el firmamento; las imágenes mágicas de las nubes y el aire; los misterios del mar. Conocía los demonios que envían sueños bajo la Luna. Comprendía el grito áspero de la corneja, el volar cantarín de los cisnes, la resurrección del fénix. Podía interpretar el vuelo de los cuervos, el rumbo de los peces y las ideas ciegas de los hombres, y predecía todas las cosas que sucedían después."
-                    </p>
+                                        <div class="col-lg-11 texto-coment">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <p class="user">Aaron</p>
+                                                </div>
+                                                <div class="col-lg-6 right">
+                                                    <p class="fecha-hora">10/10/2020 05:00</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="texto">Este es mi comentario</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 user-coment">
+                                    <div class="row">
+                                        <div class="col-lg-1">
+                                            <img src="../paisaje.jpg" alt="">
+                                        </div>
+    
+                                        <div class="col-lg-11 texto-coment">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <p class="user">Yo tambien me llamo Aaron</p>
+                                                </div>
+                                                <div class="col-lg-6 right">
+                                                    <p class="fecha-hora">10/10/2020 05:00</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="texto">Este es mi comentario</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>

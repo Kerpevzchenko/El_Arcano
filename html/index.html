@@ -17,7 +17,7 @@
         <!--HEADER-->
         <div class="row LastBar">
             <div class="col-lg-2" style="">
-                <a class="Arcano" href="#">El Arcano</a>
+                <a class="Arcano" href="index.html">El Arcano</a>
             </div>
             <div class="col-lg-8" style="">
                 <div class="search-bar" >
@@ -31,10 +31,11 @@
                 <div class="row">
                     <div class="col-lg-6 " style="">
                         <button class="SL1" id="btn-openModalLog" data-target="#myModal" data-toggle="modal">Iniciar Sesión</button>
+                        <button class="SL1" id="btn-profileW">Mi perfil</button>
                     </div>
                     <div class="col-lg-6 " style="">
                         <button class="SL2" id="btn-openRegW">Registrarse</button>
-                        <button class="SL1" id="btn-profileW">Mi perfil</button>
+                        <button class="SL2" id="btn-logout">Cerrar sesion</button>
                     </div>
                 </div>
             </div>
@@ -217,16 +218,27 @@
                         <h4 class="modal-title">Inicio de sesión</h4>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+                        <form name="loginForm" action="" method="">
                             <div class="row form-input center">
                                 <div class="col-lg-12">
-                                    <input type="email" name="" id="login-email" placeholder="Correo electronico" required> 
+                                    <input type="email" name="" id="login-email" placeholder="Correo electronico" > 
                                 </div>
                             </div>
 
                             <div class="row form-input center">
                                 <div class="col-lg-12">
-                                    <input type="password" name="" id="login-pass" placeholder="Contraseña" required>
+                                    <input type="password" name="" id="login-pass" placeholder="Contraseña" >
+                                </div>
+                            </div>
+
+                            <div class="row form-input center">
+                                <div class="col-lg-12">
+                                    <label for="rol">Rol</label>
+                                    <select name="rol" id="rol">
+                                        <option value="U">Usuario</option>
+                                        <option value="R">Reportero</option>
+                                        <option value="E">Editor</option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -240,7 +252,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button"  class="btn btn-default" data-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>

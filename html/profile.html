@@ -29,10 +29,11 @@
                 <div class="row">
                     <div class="col-lg-6 " style="">
                         <button class="SL1" id="btn-openModalLog" data-target="#myModal" data-toggle="modal">Iniciar Sesión</button>
+                        <button class="SL1" id="btn-profileW">Mi perfil</button>
                     </div>
                     <div class="col-lg-6 " style="">
                         <button class="SL2" id="btn-openRegW">Registrarse</button>
-                        <button class="SL1" id="btn-profileW">Mi perfil</button>
+                        <button class="SL2" id="btn-logout">Cerrar sesion</button>
                     </div>
                 </div>
             </div>
@@ -60,7 +61,7 @@
 
         <div class="" id="newsList">
             <div class="row">
-                <div class="col-lg-3" style="">
+                <div class="col-lg-3" id="myInfo-container" style="">
                     <!--PARA TODOS LOS USUARIOS-->
                     <div id="myInfo" style="">
                         <div class="row">
@@ -118,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8" style="">
+                <div class="col-lg-8 " id="newsRepo-container" style=""> <!--PARA TODOS LOS RESPORTEROS Y EDITOR-->
                     <div class="row">
                         <div class="menu-editor center">
                             <ul>
@@ -129,8 +130,7 @@
                     </div>
 
                     <div class="row" style="">
-                        <!--PARA TODOS LOS RESPORTEROS Y EDITOR-->
-                        <div id="news-list" style="display: none;">
+                        <div id="news-list" style="">
                             <div class="row">
                                 <div class="col-lg-12 center">Noticias</div>
                             </div>
@@ -269,7 +269,7 @@
 
 
 
-                        <div id="repo-list">
+                        <div id="repo-list" style="display: none;">
                             <div class="row">
                                 <div class="col-lg-6 repo-item" style="">
                                     <div class="row">

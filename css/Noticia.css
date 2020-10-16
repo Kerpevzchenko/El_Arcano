@@ -48,7 +48,7 @@ img {
 }
 
 hr.StartNew{
-    margin-top: 40px;
+    margin: 10px 0 ;
     height: 2px;
     background-color: #0E3D3E;
 }
@@ -89,4 +89,74 @@ div.desc {
     font-family: 'Bitter', serif;
     font-size: 12px;
     
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*COMENTARIO DE EDITOR*/
+/*/////////////////////////////////////////////////////////////////////*/
+.edit-coment{
+    margin-bottom: 50px;
+}
+
+.edit-coment form input{
+    margin: 5px 0;
+}
+
+.edit-coment form input[type="button"]{
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(26, 26, 155);
+    width: 25%;
+    color: wheat;
+    padding: 5px 0;
+
+    transition: all ease .4s;
+}
+
+.edit-coment form input[type="button"]:hover{
+    letter-spacing: 3px;
+    background-color: rgb(48, 48, 168);
+}
+
+form #coment{
+    background-color: transparent;
+    border: 2px solid;
+    color: white;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 20px;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*SECCION DE COMENTARIOS*/
+/*/////////////////////////////////////////////////////////////////////*/
+.edit-coment.Usuario{
+    margin-bottom: 10px;
+}
+
+.user-coment{
+    border-bottom: 3px #0E3D3E solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.user-coment img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.user-coment .texto-coment{
+    padding: 0px 10px;
+    /*background-color: tomato;*/
+}
+
+.user-coment .texto-coment .user{
+}
+
+.user-coment .texto-coment .fecha-hora{
+}
+
+.user-coment .texto-coment .texto{
+    word-wrap: break-word;
 }
