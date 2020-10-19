@@ -156,6 +156,7 @@ body{
     color: black;
 }
 
+
 .center{
     text-align: center;
 }
@@ -266,4 +267,11 @@ div.polaroid a{
 
 .footer-item ul li{
     display: block;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*MODAL AGREGAR CATEOGORIA*/
+/*/////////////////////////////////////////////////////////////////////*/
+#Modal-AddCategory{
+
 }

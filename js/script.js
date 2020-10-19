@@ -10,13 +10,7 @@ var rol = 0;
 $(document).ready(function(){
     //alert("Esto es Jquery");
 
-    //Acomoda los elementos del navbar
-    var menuNav = $(".topnav").width();
-    var NavElem = $(".topnav a");
-    var posElem = menuNav / NavElem.length;
-    NavElem.each(function(){
-        $(this).css("width",posElem);
-    });
+
 
     //Vincula el boton submit para iniciar sesion con la funcion.
     $("#btn-login").on("click", login);
@@ -44,13 +38,16 @@ $(document).ready(function(){
     $("#ed-selRepo").on("click", function(){
         $("#repo-list").css("display","block");
         $("#news-list").css("display","none");
-    })
+    });
+
+    $("#btn-addNews").on("click",{name : "Crear_Noticia.html"} ,openPageInTab);
 
     //Vincula todos los elementos de noticia con la pagina de noticia.
     var newsArray = $(".polaroid a");
     newsArray.each(function(){
         $(this).attr("href", "Noticia.html");
     });
+
 
     rol = sessionStorage.getItem("rol");
 
@@ -75,6 +72,10 @@ $(document).ready(function(){
 
             //Oculta la caja de comentario del editor.
             $("#editComent-container").css("display","none");
+
+            $("#Ed-AgrSecc").css("display", "none");
+
+            $("#btn-addNews").css("display", "none");
             break;
 
         case '2'://Reportero
@@ -87,16 +88,20 @@ $(document).ready(function(){
             $("#btn-logout").css("display", "inline-block");
 
             //Oculta los botones de reporteros y noticias y su contenido.
-            $("#newsRepo-container").css("display", "none");
+            /*$("#newsRepo-container").css("display", "none");
             $("#myInfo-container").removeClass("col-lg-3");
             $("#myInfo-container").addClass("col-lg-12");
             $("#myInfo-container #myInfo").css({
                 "width": "30%",
                 "margin": "50px auto"
-            });
+            });*/
+
+            $("#menuEditor-container").css("display", "none");
 
             //Oculta la caja de comentario del editor.
             $("#editComent-container").css("display","none");
+
+            $("#Ed-AgrSecc").css("display", "none");
             break;
 
         case '3'://Editor
@@ -107,6 +112,8 @@ $(document).ready(function(){
             $("#btn-profileW").css("display", "inline-block");
             //Muestra el boton de cerrar sesion
             $("#btn-logout").css("display", "inline-block");
+
+            $("#btn-addNews").css("display", "none");
             break;
 
         case '0'://Visitante
@@ -116,8 +123,33 @@ $(document).ready(function(){
 
             $("#userComent-container").css("display", "none");
 
+            $("#Ed-AgrSecc").css("display", "none");
+
+            $("#btn-addNews").css("display", "none");
+
             break;
     }
+
+        //Acomoda los elementos del navbar
+        if($("#Ed-AgrSecc").css("display") == "block")
+        {
+            var menuNav = $(".topnav").width();
+            var NavElem = $('.topnav a');
+            var posElem = menuNav / NavElem.length;
+            NavElem.each(function(){
+                $(this).css("width",posElem);
+            });
+        }
+        else
+        {
+            var menuNav = $(".topnav").width();
+            var NavElem = $('.topnav a');
+            var posElem = menuNav / (NavElem.length -1 );
+            NavElem.each(function(){
+                $(this).css("width",posElem);
+            });
+        }
+
 
 });
 

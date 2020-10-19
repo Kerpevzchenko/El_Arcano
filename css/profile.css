@@ -131,3 +131,29 @@
 #repo-list .repo-item p.nom{
     font-weight: bold;
 }
+
+
+#btn-addNews{
+    width: 70%;
+    position: sticky;
+    top: 0;
+    border: 2px white solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+    border-top: 0;
+    background-color: transparent;
+    color: white;
+    padding: 10px 0px;
+    transition: all ease 0.4s;
+}
+
+#btn-addNews:hover{
+    border-color: #A6D004;
+    background-color: #A6D004;
+    color: black;
+    padding: 30px 0;
+}
+
+#btn-addNews i{
+    display: block;
+}
