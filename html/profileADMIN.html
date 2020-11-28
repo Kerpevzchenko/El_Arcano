@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!--HEADER-->
+        <div class="row LastBar">
+            <div class="col-lg-2" style="">
+                <a class="Arcano" href="index.html">El Arcano</a>
+            </div>
+            <div class="col-lg-8" style="">
+                <div class="search-bar" >
+                    <form action="">
+                        <i class="fas fa-search"></i>
+                        <input type="text" name="" id="" placeholder="Buscar">
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-2 Botones" style="">
+                <div class="row">
+                    <div class="col-lg-6 " style="">
+                        <button class="SL1" id="btn-openModalLog" data-target="#myModal" data-toggle="modal">Iniciar Sesión</button>
+                        <button class="SL1" id="btn-profileW">Mi perfil</button>
+                    </div>
+                    <div class="col-lg-6 " style="">
+                        <button class="SL2" id="btn-openRegW">Registrarse</button>
+                        <button class="SL2" id="btn-logout">Cerrar sesion</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row nav-cont">
+            <div class="col-lg-2"></div>
+            
+            <div class="col-lg-8 " >
+                <!--NAVBAR-->
+                <div class="topnav" style="">
+                    <a href="#">Misterios</a>
+                    <a href="#">Necronomicón</a>
+                    <a href="#">Portales</a>
+                    <a href="#">Deep Web</a>
+                    <a href="#">NASA</a>
+                    <a href="#">Religión</a>
+                    <a href="#" id="Ed-AgrSecc">+</a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 center">
+            </div>
+        </div>
+
+        <div class="" id="newsList">
+            <div class="row">
+                <div class="col-lg-3" id="myInfo-container" style="">
+                    <!--PARA TODOS LOS USUARIOS-->
+                    <div id="myInfo" style="">
+                        <div class="row">
+                            <div class="col-lg-12 center">
+                                <!--AVATAR DE USUARIO-->
+                                <img src="https://static.wikia.nocookie.net/new-fantendo/images/2/24/Soy_Admin.jpg/revision/latest?cb=20200728204122&path-prefix=es" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 content-info">
+                                <div class="row">
+                                    <div class="col-lg-8 left">
+                                        <div>Teléfono</div>
+                                        <div>8080808080</div>
+                                    </div>
+
+                                    <div class="col-lg-4 right">
+                                        <div><input type="button" value="Cambiar" class="SL1"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-8 left">
+                                        <div>Nombre</div>
+                                        <div>Aaron Leonardo Rodriguez Lopez</div>
+                                    </div>
+
+                                    <div class="col-lg-4 right">
+                                        <div><input type="button" value="Cambiar" class="SL1"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-8 left">
+                                        <div>Correo</div>
+                                        <div>aaronleonidas@gmail.com</div>
+                                    </div>
+
+                                    <div class="col-lg-4 right ">
+                                        <div><input type="button" value="Cambiar" class="SL1"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-8 left">
+                                        <div>Contraseña</div>
+                                        <div>**************</div>
+                                    </div>
+
+                                    <div class="col-lg-4 right ">
+                                        <div><input type="button" value="Cambiar" class="SL1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 " id="newsRepo-container" style=""> <!--PARA TODOS LOS RESPORTEROS Y EDITOR-->
+                    <div class="row" style="">
+                        <div id="news-list" style="">
+                            <div class="row">
+                                <div class="col-lg-12 center">Solicitudes Pendientes</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="polaroid">
+                                        <a href="">
+                                            <div class="info">
+                                                <h6 class="fecha">Eliminar usuario</h6>
+                                                <h2>Nombre</h2>
+                                                <p>Correo Electrónico</p>
+                                                <div class="row" style="">
+                                                    <button class="SL1" id="btn">Aceptar</button>
+                                                    <button class="SL1" id="btn" style="margin-left: 10px;">Rechazar</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <div class="col-lg-4">
+                                    <div class="polaroid">
+                                        <a href="">
+                                            <div class="info">
+                                                <h6 class="fecha">Eliminar sección</h6>
+                                                <h2>Nombre de la sección</h2>
+                                                <div class="row" style="">
+                                                    <button class="SL1" id="btn">Aceptar</button>
+                                                    <button class="SL1" id="btn" style="margin-left: 10px;">Rechazar</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <div class="col-lg-4">
+                                    <div class="polaroid">
+                                        <a href="">
+                                            <div class="info">
+                                                <h6 class="fecha">Eliminar usuario</h6>
+                                                <h2>Nombre</h2>
+                                                <p>Correo Electrónico</p>
+                                                <div class="row" style="">
+                                                    <button class="SL1" id="btn">Aceptar</button>
+                                                    <button class="SL1" id="btn" style="margin-left: 10px;">Rechazar</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="polaroid">
+                                        <a href="">
+                                            <div class="info">
+                                                <h6 class="fecha">Eliminar sección</h6>
+                                                <h2>Nombre de la sección</h2>
+                                                <div class="row" style="">
+                                                    <button class="SL1" id="btn">Aceptar</button>
+                                                    <button class="SL1" id="btn" style="margin-left: 10px;">Rechazar</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <div class="col-lg-4">
+                                    <div class="polaroid">
+                                        <a href="">
+                                            <div class="info">
+                                                <h6 class="fecha">Eliminar sección</h6>
+                                                <h2>Nombre de la sección</h2>
+                                                <div class="row" style="">
+                                                    <button class="SL1" id="btn">Aceptar</button>
+                                                    <button class="SL1" id="btn" style="margin-left: 10px;">Rechazar</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+
+
+
+                        <div id="repo-list" style="display: none;">
+                            <div class="row">
+                                <div class="col-lg-6 repo-item" style="">
+                                    <div class="row">
+                                        <div class="col-lg-6 center">
+                                            <img src="https://happytravel.viajes/wp-content/uploads/2020/04/146-1468479_my-profile-icon-blank-profile-picture-circle-hd-300x238.png" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p class="nom">Aaron Rodriguez</p>
+                                            <p class="tel">Tel: 1010101010</p>
+                                            <p class="correo">correoEjem@hotmail.com</p>
+                                            <button >Eliminar</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 repo-item" style="">
+                                    <div class="row">
+                                        <div class="col-lg-6 center" style="">
+                                            <img src="https://happytravel.viajes/wp-content/uploads/2020/04/146-1468479_my-profile-icon-blank-profile-picture-circle-hd-300x238.png" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p class="nom">Aaron Rodriguez</p>
+                                            <p class="tel">Tel: 1010101010</p>
+                                            <p class="correo">correoEjem@hotmail.com</p>
+                                            <button >Eliminar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 center" >
+                        <button id="btn-addNews"><i class="fas fa-plus-circle"></i>Noticias</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8e52bc45f8.js" crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript" src="../js/script.js"></script>
+    
+</body>
+</html>
